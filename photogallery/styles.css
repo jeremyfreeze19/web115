@@ -1,0 +1,212 @@
+body{
+font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+margin:0px auto;
+
+}
+
+header{
+height:50px;
+width:100%;
+background-color:#E6E6E6;
+border-bottom:1px solid #156B5E;
+position:fixed;
+top:0px;
+}
+
+header h1{
+text-align:center;
+color:#156B5E;
+margin:5px 0px 0px 10px;
+font-size:2em;
+}
+
+header ul{
+list-style:none;
+margin:10px 0px 10px 0px;
+text-align:center;
+
+}
+
+header li{
+display:inline;
+padding-right:25px;
+margin:0px auto;
+}
+
+header li a{
+text-decoration:none;
+color:#156B5E;
+}
+
+header li a:hover{
+color:#26BCA5;
+}
+
+.active{
+color:#26BCA5;
+}
+
+main{
+min-height:auto;
+margin-top:50px
+}
+
+footer{
+width:100%;
+min-height:50px;
+background-color:#E6E6E6;
+border-top:1px solid #156B5E;
+position:fixed;
+bottom:0px;
+font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+text-align:center;
+color:#156B5E;
+}
+
+footer ul{
+list-style:none;
+margin:15px 0px 10px 0px;
+text-align:center;
+}
+
+footer li{
+display:inline;
+padding-right:25px;
+margin:0px auto;
+
+}
+footer a{
+color:#156B5E;
+}
+
+footer a:hover{
+color:#26BCA5;
+}
+
+footer p{
+margin-top:15px;
+font-weight:bold;
+}
+
+.container {
+    max-width: 80em;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 140%;
+	text-align:center;
+	margin:0px auto;
+	color:#156B5E;
+}
+
+h2{
+	font-size: 3em;
+	text-align:center;
+	margin:30px 0px 0px 0px;
+	color:#156B5E;
+}
+
+/* Tools: Clearfix */
+
+.clearfix:before,
+.clearfix:after {
+    content: '';
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+
+/* All Grids */
+
+figure {
+    margin: 0;
+}
+
+figure img {
+    width: 100%;
+    display: block;
+}
+
+
+/* Grid Layout: Float */
+
+.float-grid figure {
+    width: 25%;
+    float: left;
+    margin: 0;
+}
+
+.float-grid figure:nth-of-type(4n+1) {
+    /* Selects the first image of each row (because 4 columns) and clears the float to make sure that it lines up in a grid */
+    clear: left;
+}
+
+
+/* Column Grid */
+
+.column-grid .gallery {
+    /* Remember the browser prefixes! */
+    -webkit-columns: 3;
+    -moz-columns: 3;
+    columns: 3;
+}
+
+.column-grid figure {
+    margin: 0 0 20px;
+    width: 100%;
+}
+
+.column-grid figure img {
+    border: 15px solid rgba(255, 255, 255, 0.5);
+    box-sizing: border-box;
+    /* Otherwise the border would add to the width of the image box */
+}
+
+
+/* Caption Gallery */
+
+.caption-grid .gallery {
+    /* Remember the browser prefixes! */
+    -webkit-columns: 3;
+    -moz-columns: 3;
+    columns: 3;
+}
+
+.caption-grid figure {
+    margin: 0 0 20px;
+    width: 100%;
+    position: relative;
+    /* We need a relative each time we have an absolute */
+}
+
+.caption-grid figcaption {
+    padding: 10px;
+    background: rgba(21,107,94,.5);
+    color: #fff;
+    text-align: center;
+    border-style: solid;
+    border-color: #fff;
+    border-width: 0 5px 5px;
+    position: absolute;
+    /* We must have a position: relative; on a parent element to make sure this lines up in the right place */
+    width: 100%;
+    bottom: 0px;
+    /* Could be top if you want the captions to, well, be at the top of the figure */
+}
+
+.caption-grid figure img {
+    border-width: 5px 5px 0;
+}
+
+.caption-grid figcaption,
+.caption-grid figure img {
+    border-style: solid;
+    border-color: #fff;
+    box-sizing: border-box;
+}

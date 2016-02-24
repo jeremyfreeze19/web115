@@ -1,0 +1,1 @@
+<p style="text-align:center; margin-top:10px;">This is my nifty footer</p>

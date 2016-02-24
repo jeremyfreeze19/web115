@@ -1,0 +1,36 @@
+body {
+    background:#A1A1A1;
+    font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-align:center;
+}
+
+#container {
+    background:#CDCDCD;
+    color:#00497A;
+    width: 1000px;
+	min-height: 500px;
+    margin: 5px auto;
+    border: 2px solid white;
+    border-radius: 40px;
+    padding: 10px;
+}
+
+header {
+    padding: 10px;
+}
+
+main {
+    min-height: 400px;
+}
+
+footer {
+    padding: 10px;
+}
+
+a {
+	text-decoration:none;
+}
+
+li{
+	list-style:none;
+}

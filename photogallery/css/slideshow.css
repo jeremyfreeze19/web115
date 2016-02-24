@@ -1,0 +1,58 @@
+#banner-wrapper {
+	background: #fff;
+	width: 100%;
+	min-width: 980px;
+	position: relative;
+	margin-bottom: 10px;
+}
+
+.home #banner-wrapper {
+	height: 508px !important;
+	overflow: hidden;
+}
+
+#banner {
+	text-align: center;
+}	
+
+.home #banner {
+	text-align: center;
+	overflow: hidden;
+	min-width: 980px;
+	height: 483px !important;
+}
+
+.home .slide {
+	max-width: 100% !important;
+	line-height: 1em;
+	border: none;
+	padding: 0;
+	margin: 0;
+	height: 483px !important;
+}
+
+#banner-pager-wrapper {
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+}
+#banner-pager {
+	position: relative;
+	left: -50%;
+}
+
+#banner-pager a {
+	display: block;
+	float: left;
+	width: 17px;
+	height: 17px;
+	font-size: 0;
+	line-height: 0;
+	text-indent: -10000px;
+	background: url(images/banner-circle-off.png) no-repeat;
+	margin-left: 7px;
+}
+	
+#banner-pager a.activeSlide {
+	background: url(images/banner-circle-on.png) no-repeat;
+}

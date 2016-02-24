@@ -1,0 +1,97 @@
+body {
+    background: #98FFF9;
+    font-family: arial, helvetica, sans-serif;
+	
+	
+}
+p{
+	color:#146864;
+}
+
+#container {
+    width: 960px;
+    min-height: 500px;
+    margin: 0px;
+    padding: 0px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0px auto;
+    padding: 0px auto;
+    background: #26D0C7;
+    color: #fff;
+	border-radius:5px;
+}
+
+nav > ul > li
+/* > makes it target only a ul that follows a nav */
+
+{
+    text-align:center;
+}
+
+nav ul::after {
+    /* pseudo element */
+    content: "";
+    display: block;
+    clear: both;
+    color: #f6fad9;
+}
+
+nav ul li:hover {
+    /*makes top part of menu be in hover state */
+    background:#25D0C7;
+    color: #fff;
+	text-decoration:none;
+}
+
+nav ul li:hover >ul {
+    display: block;
+	background-color:#25D0C7;
+}
+
+nav ul li a {
+    display: inline-block;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    width: 125px;
+}
+
+nav ul li a:hover {
+    background: #0E6464;
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul ul {
+    display: none;
+    position: absolute;
+    /* top: 100%; --- in video, breaks it*/
+    background: #0C5F5B;
+    color: #fff;
+}
+
+
+/*top level formatting*/
+
+nav > ul {
+}
+
+nav > ul > li {
+    float: left;
+}
+
+nav >ul > li > a {
+    padding: 10px 20px 15px 20px;
+    width: auto;
+}
+
+.clear-both {
+    clear: both;
+}
+
+.invisible {
+    visibility: hidden;
+}
